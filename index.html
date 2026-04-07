@@ -927,7 +927,7 @@
 
         <!-- EDIT: headline (use <em> for accent color) -->
         <h1 class="hero-title reveal reveal-2">
-          <span id="scramble-text">Photography</span>
+          <span id="scramble-text">Photography</span><em style="display:block;min-height:1em;"><span>& Graphic Design</span></em>
 
         <!-- EDIT: one-liner -->
         <p class="hero-sub reveal reveal-3 blink-cursor">
@@ -1462,7 +1462,8 @@
         }, delay);
       }
 
-      runScramble('scramble-text',  'Photography',     1100, 4);
+      runScramble('scramble-text',  'Photography',     400, 4);
+      runScramble('scramble-line2', '& Graphic Design', 900, 5);
       /* ── STAGGER REVEAL ON SCROLL ── */
       var staggerEls = document.querySelectorAll('.stagger-reveal, .section-title, .service-row, .about-bio');
       staggerEls.forEach(function(el) { el.classList.add('stagger-reveal'); });
